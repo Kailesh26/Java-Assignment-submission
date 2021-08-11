@@ -1,0 +1,45 @@
+2. Define a class Student with following members:
+int roll, String name, float marks.
+input() to take input of the details
+display() to all details of a student.
+Write a program to which will store details of a student and print the details using the above class.
+ 
+CODING:-
+
+import java.util.*;
+class Student
+{
+    public static int roll;
+    public static String name;
+    public static int marks;
+    public static int input()
+    {
+        Scanner sc=new Scanner(System.in);
+        roll=sc.nextInt();
+        name=sc.next();
+        marks=sc.nextInt();
+        return 0;
+    }
+    public static int display()
+    {
+        System.out.println("ROLL NO: "+roll);
+        System.out.println("NAME: "+name);
+        System.out.println("MARKS: "+marks);
+        return 0;
+    }
+    public static void main(String[] args)
+    {
+        input();
+        display();
+    }
+}
+
+INPUT:-
+08
+RAM
+450
+
+OUTPUT:-
+ROLL NO: 08
+NAME: Ram
+MARKS: 450
